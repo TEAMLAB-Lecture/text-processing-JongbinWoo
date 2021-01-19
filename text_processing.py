@@ -61,5 +61,6 @@ def no_vowels(input_string):
     remove_list = ['a', 'e', 'i', 'o', 'u']
     no_vowel_string = input_string[:]
     for i in remove_list:
-        no_vowel_string = no_vowel_string.replace(i, "")
+        no_vowel_string = no_vowel_string.replace(i.lower(), "")
+        no_vowel_string = no_vowel_string.replace(i.upper(), "")
     return no_vowel_string
